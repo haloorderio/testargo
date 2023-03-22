@@ -56,16 +56,68 @@
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
+								<!-- <h2>Arcu aliquet vel lobortis ata nisl<br />
 								eget augue amet aliquet nisl cep donec</h2>
 								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p> -->
+								
+								<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+								<style>
+								    .mySlides {display:none;}
+
+								    * {box-sizing: border-box;}
+								    body {font-family: Verdana, sans-serif;}
+								    .mySlides {display: none;}
+								    img {vertical-align: middle;}
+
+								    /* Slideshow container */
+								    .slideshow-container {
+								      max-width: 1000px;
+								      position: relative;
+								      margin: auto;
+								    }
+
+								    /* On smaller screens, decrease text size */
+								    @media only screen and (max-width: 300px) {
+								      .text {font-size: 11px}
+								    }
+
+								</style>
+							    <body>
+								<br>
+								<div class="w3-content w3-section; slideshow-container">
+								  <img class="mySlides w3-animate-right" src="images/slider-argomas-1.png" style="width:100%">
+								  <img class="mySlides w3-animate-right" src="images/slider-argomas-2.png" style="width:100%">
+								  <img class="mySlides w3-animate-right" src="images/slider-argomas-3.png" style="width:100%">
+								  <img class="mySlides w3-animate-right" src="images/slider-argomas-4.png" style="width:100%">
+								</div>
+								<br>
+
+									<script>
+									var myIndex = 0;
+									carousel();
+
+									function carousel() {
+									  var i;
+									  var x = document.getElementsByClassName("mySlides");
+									  for (i = 0; i < x.length; i++) {
+									    x[i].style.display = "none";  
+									  }
+									  myIndex++;
+									  if (myIndex > x.length) {myIndex = 1}    
+									  x[myIndex-1].style.display = "block";  
+									  setTimeout(carousel, 2000);    
+									}
+									</script>
+
+							    </body>
+								
 							</header>
-							<ul class="icons major">
+							<!-- <ul class="icons major">
 								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
 								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
 								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
+							</ul> -->
 						</div>
 					</section>
 
